@@ -9,7 +9,7 @@ import { MenuItem } from 'primeng/api';
 export class NavbarComponent implements OnInit {
   items: MenuItem[] = [];
   nombrePromotora: string = "ELIZABETH ZAMBRANO BERMEO";
-  mensajeWhatsApp = encodeURIComponent('Hola, estoy interesado en obtener información totalmente personalizada y gratis para viajar y trabajar en InCruises.');
+  mensajeWhatsApp = encodeURIComponent('Hola, estoy interesado en obtener información totalmente personalizada gratis para viajar y trabajar en InCruises.');
   enlaceWhatsApp = `https://wa.me/+34649926162?text=${this.mensajeWhatsApp}`;
   enlaceInstagram = `https://www.instagram.com/elzaberh_viaja_barato/`;
   enlaceTiktok = `https://www.tiktok.com/@elizabehz`;
@@ -18,6 +18,12 @@ export class NavbarComponent implements OnInit {
       {
         label: 'EXPERIENCIAS',
         icon: 'pi pi-camera',
+        command: () => {
+          const section = document.getElementById('section-experience');
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
       },
       {
         label: 'CONTACTO',
