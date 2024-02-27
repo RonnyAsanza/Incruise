@@ -1,0 +1,149 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #d1f3fc;
+    margin: 0;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.text-color-navbar {
+    color: aliceblue;
+}
+
+.color-orange {
+    color: orange;
+}
+
+.bg-orange {
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.bg-c-orange {
+    background-color: orange;
+}
+
+.mr-video {
+    margin-bottom: 300px !important;
+}
+
+.imgSemi img {
+    border-radius: 10px;
+    border: 2px solid orange;
+    ;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(170, 7, 192, 0.19);
+    width: 175px !important;
+    height: 325px !important;
+    max-width: 175px !important;
+    max-height: 325px !important;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+}
+
+.imgComplete img {
+    border-radius: 10px;
+    border: 2px solid orange;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(170, 7, 192, 0.19);
+    width: 375px !important;
+    height: 325px !important;
+    max-width: 375px !important;
+    max-height: 325px !important;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+}
+
+.imgGalleriFirst {
+    border-radius: 10px;
+    border: 2px solid orange;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(170, 7, 192, 0.19);
+    width: 330px !important;
+    height: 325px !important;
+    max-width: 330px !important;
+    max-height: 325px !important;
+}
+
+.imgGalleriSecond {
+    border-radius: 10px;
+    border: 2px solid orange;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(170, 7, 192, 0.19);
+    width: 125px !important;
+    height: 100px !important;
+    max-width: 125px !important;
+    max-height: 100px !important;
+}
+
+/* Pequeño (sm) - para pantallas mayores a 576px */
+@media (min-width: 576px) {
+    .imgSemi img {
+        width: 275px !important;
+        max-width: 275px !important;
+    }
+
+    .imgComplete img {
+        width: 550px !important;
+        height: 375px !important;
+        max-width: 550px !important;
+        max-height: 375px !important;
+    }
+
+    .imgGalleriFirst {
+        width: 600px !important;
+        height: 350px !important;
+        max-width: 600px !important;
+        max-height: 350px !important;
+    }
+}
+
+/* Mediano (md) - para pantallas mayores a 768px */
+@media (min-width: 768px) {
+    .imgSemi img {
+        width: 250px !important;
+        max-width: 275px !important;
+    }
+
+    .imgComplete img {
+        width: 825px !important;
+        height: 425px !important;
+        max-width: 825px !important;
+        max-height: 425px !important;
+    }
+
+    .imgGalleriSecond {
+        width: 100px !important;
+        max-width: 100px !important;
+    }
+}
+
+/* Grande (lg) - para pantallas mayores a 992px */
+@media (min-width: 992px) {
+    .imgSemi img {
+        width: 250px !important;
+        max-width: 275px !important;
+    }
+
+    .imgComplete img {
+        width: 825px !important;
+        height: 425px !important;
+        max-width: 825px !important;
+        max-height: 425px !important;
+    }
+}
+
+/* Extra grande (xl) - para pantallas mayores a 1200px */
+@media (min-width: 1200px) {
+    .imgSemi img {
+        width: 250px !important;
+        max-width: 275px !important;
+    }
+
+    .imgComplete img {
+        width: 1250px !important;
+        height: 500px !important;
+        max-width: 1250px !important;
+        max-height: 500px !important;
+    }
+}

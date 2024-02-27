@@ -1,0 +1,126 @@
+<svg
+  class="wave"
+  viewBox="0 0 1800 124"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M0 79.114L75 64.152C150 49.19 300 19.266 450 6.79764C600 -5.67069 750 -0.683357 900 19.266C1050 39.2153 1200 74.1267 1350 76.6203C1500 79.114 1650 49.19 1725 34.228L1800 19.266V124H1725C1650 124 1500 124 1350 124C1200 124 1050 124 900 124C750 124 600 124 450 124C300 124 150 124 75 124H0V79.114Z"
+    fill="white"
+  ></path>
+</svg>
+<div class="bg-c-orange w-full grid text-center">
+  <div class="col-12">
+    <p class="text-2xl md:text-7xl font-bold text-color-navbar mt-4 mb-2">
+      Contacto
+    </p>
+  </div>
+  <div class="col-12 md:col-5">
+    <div class="grid ml-1 md:ml-6 md:mt-3">
+      <div class="col-12 md:col-6">
+        <div class="card flex justify-content-center">
+          <input
+            pInputText
+            pKeyFilter="int"
+            placeholder="Nombres"
+            class="w-full"
+            [(ngModel)]="nombres"
+          />
+        </div>
+      </div>
+      <div class="col-12 md:col-6">
+        <div class="card flex justify-content-center">
+          <input
+            pInputText
+            pKeyFilter="int"
+            placeholder="Appellidos"
+            class="w-full"
+            [(ngModel)]="apellidos"
+          />
+        </div>
+      </div>
+      <div class="col-12 md:col-6">
+        <div class="card flex justify-content-center">
+          <input
+            pInputText
+            pKeyFilter="int"
+            placeholder="Email"
+            class="w-full"
+            [(ngModel)]="email"
+          />
+        </div>
+      </div>
+      <div class="col-12 md:col-6">
+        <div class="card flex justify-content-center">
+          <input
+            pInputText
+            pKeyFilter="int"
+            placeholder="Teléfono"
+            class="w-full"
+            [(ngModel)]="telefono"
+          />
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="card flex justify-content-center">
+          <textarea
+            [(ngModel)]="comentario"
+            placeholder="Escribe un mensaje..."
+            class="w-full"
+            rows="5"
+            cols="30"
+            pInputTextarea
+            [autoResize]="true"
+          ></textarea>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="card flex justify-content-center">
+          <p-button
+            [disabled]="
+              nombres.trim() === '' ||
+              apellidos.trim() === '' ||
+              email.trim() === '' ||
+              telefono.trim() === ''
+            "
+            class="w-full"
+            label="Enviar"
+            [loading]="loading"
+            (click)="load()"
+          ></p-button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 md:col-7">
+    <div class="grid ml-1">
+      <div class="col-12">
+        <div class="card">
+          <p-galleria
+            [value]="images"
+            [responsiveOptions]="responsiveOptions"
+            [numVisible]="5"
+          >
+            <ng-template pTemplate="item" let-item>
+              <img [src]="item.itemImageSrc" class="imgGalleriFirst" />
+            </ng-template>
+            <ng-template pTemplate="thumbnail" let-item>
+              <div class="grid grid-nogutter justify-content-center">
+                <img [src]="item.thumbnailImageSrc" class="imgGalleriSecond" />
+              </div>
+            </ng-template>
+          </p-galleria>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="text-center">
+  Web Desarrollada por
+  <a href="https://asanzawebsolutions.com/" target="_blank"
+    >Asanza Solutions <i class="pi pi-code" style="font-size: 1rem"></i
+  ></a>
+</p>
